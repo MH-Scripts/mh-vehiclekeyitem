@@ -40,6 +40,9 @@
 - in sever.sfg after `[standalone]` add -> `ensure [mh]`
 - After you done with the instructions below, you can restart the server.
 
+# Key Image
+![alttext](https://github.com/MH-Scripts/mh-vehiclekeyitem/vehiclekey.png)
+
 # QBCore Shared Item
 ```lua
 vehiclekey = { name = 'vehiclekey', label = 'Vehicle Key', weight = 500, type = 'item', image = 'vehiclekey.png', unique = true, useable = true, shouldClose = true, description = 'A vehicle key.' },
@@ -88,5 +91,6 @@ function RemoveKeys(id, plate)
 end
 ```
 
-# ---------------------------------------------------------------------------
+# LICENSE
+[GPL LICENSE](./LICENSE)<br />
 &copy; [MaDHouSe79](https://www.youtube.com/@MaDHouSe79)
