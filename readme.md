@@ -32,6 +32,11 @@
 - [qb-inventory](https://github.com/qbcore-framework/qb-inventory) 2.0
 - [qb-vehiclekeys](https://github.com/qbcore-framework/qb-vehiclekeys) 
 
+# Recommend for qb-vehiclekeys
+- Use [mh-databaseoptimizer](https://github.com/MH-Scripts/mh-databaseoptimizer) if you using qb-vehiclekeys
+- cause if you don't use [mh-databaseoptimizer](https://github.com/MH-Scripts/mh-databaseoptimizer)
+- it can happen dat you get a key from other players vehicle so use [mh-databaseoptimizer](https://github.com/MH-Scripts/mh-databaseoptimizer) and this does not happends.
+
 # Installation:
 - Create a folder `[mh]` in `resources`. 
 - Put `mh-vehiclekeyitem` in to `resources/[mh]`.
@@ -49,8 +54,6 @@ vehiclekey = { name = 'vehiclekey', label = 'Vehicle Key', weight = 500, type = 
 ```
 
 # Edit Code in qb-vehiclekeys
-- i also recommend using [mh-databaseoptimizer](https://github.com/MH-Scripts/mh-databaseoptimizer) if you use qb-vehiclekeys
-- cause if you don;t use that it can happen dat you have a key from other players so use [mh-databaseoptimizer](https://github.com/MH-Scripts/mh-databaseoptimizer) and it does not happends.
 - in `qb-vehiclekeys/server/main.lua` around line 77
 ```lua
 function GiveKeys(id, plate)
