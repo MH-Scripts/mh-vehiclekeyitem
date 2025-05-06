@@ -50,6 +50,7 @@ vehiclekey = { name = 'vehiclekey', label = 'Vehicle Key', weight = 500, type = 
 
 # Edit Code in qb-vehiclekeys
 - i also recommend using [mh-databaseoptimizer](https://github.com/MH-Scripts/mh-databaseoptimizer) if you use qb-vehiclekeys
+- cause if you don;t use that it can happen dat you have a key from other players so use [mh-databaseoptimizer](https://github.com/MH-Scripts/mh-databaseoptimizer) and it does not happends.
 - in `qb-vehiclekeys/server/main.lua` around line 77
 ```lua
 function GiveKeys(id, plate)
