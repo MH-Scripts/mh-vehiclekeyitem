@@ -49,6 +49,7 @@ vehiclekey = { name = 'vehiclekey', label = 'Vehicle Key', weight = 500, type = 
 ```
 
 # Edit Code in qb-vehiclekeys
+- i also recommend using [mh-databaseoptimizer](https://github.com/MH-Scripts/mh-databaseoptimizer) if you use qb-vehiclekeys
 - in `qb-vehiclekeys/server/main.lua` around line 77
 ```lua
 function GiveKeys(id, plate)
@@ -74,7 +75,8 @@ function GiveKeys(id, plate)
     TriggerClientEvent('qb-vehiclekeys:client:GiveKeyItem', id, plate)
 end
 ```
-- Although this function is not used anywhere in qb, but I'll add it in case they suddenly use it
+
+- Although this function below is not used anywhere in qb, but add it just in case they suddenly use it.
 ```lua
 function RemoveKeys(id, plate)
     local Player = QBCore.Functions.GetPlayer(id)
