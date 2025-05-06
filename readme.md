@@ -74,7 +74,7 @@ function GiveKeys(id, plate)
     TriggerClientEvent('qb-vehiclekeys:client:GiveKeyItem', id, plate)
 end
 ```
-
+- Although this function is not used anywhere in qb, but I'll add it in case they suddenly use it
 ```lua
 function RemoveKeys(id, plate)
     local Player = QBCore.Functions.GetPlayer(id)
