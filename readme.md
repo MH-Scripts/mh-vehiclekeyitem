@@ -41,7 +41,7 @@
 - After you done with the instructions below, you can restart the server.
 
 # Key Image
-![alttext](https://github.com/MH-Scripts/mh-vehiclekeyitem/vehiclekey.png)
+![alttext](https://github.com/MH-Scripts/mh-vehiclekeyitem/blob/main/vehiclekey.png)
 
 # QBCore Shared Item
 ```lua
