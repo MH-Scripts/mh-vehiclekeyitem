@@ -72,7 +72,9 @@ function GiveKeys(id, plate)
     if not VehicleList[plate] then VehicleList[plate] = {} end
     VehicleList[plate][citizenid] = true
 
-    exports['mh-vehiclekeyitem']:AddItem(id, plate) -- mh-vehiclekeyitem add here
+    if GetResourceState("mh-vehiclekeyitem") ~= 'missing' then
+        exports['mh-vehiclekeyitem']:AddItem(id, plate) -- mh-vehiclekeyitem add here
+    end
 
     TriggerClientEvent('QBCore:Notify', id, Lang:t('notify.vgetkeys'))
     TriggerClientEvent('qb-vehiclekeys:client:AddKeys', id, plate)
@@ -90,8 +92,10 @@ function RemoveKeys(id, plate)
     if VehicleList[plate] and VehicleList[plate][citizenid] then
         VehicleList[plate][citizenid] = nil
     end
-    
-    exports['mh-vehiclekeyitem']:RemoveItem(id, plate) -- mh-vehiclekeyitem add here
+
+    if GetResourceState("mh-vehiclekeyitem") ~= 'missing' then
+        exports['mh-vehiclekeyitem']:RemoveItem(id, plate) -- mh-vehiclekeyitem add here
+    end
     
     TriggerClientEvent('qb-vehiclekeys:client:RemoveKeys', id, plate)
 end
